@@ -9,8 +9,6 @@ import {
   Col,
 } from "react-bootstrap";
 
-import { Link } from "react-router-dom";
-
 import Dotxxl from "../assets/dot-xxl.png";
 import Dot4 from "../assets/dot-4.png";
 import Dot8 from "../assets/dot-8.png";
@@ -18,7 +16,14 @@ import Dot8 from "../assets/dot-8.png";
 const Plans = () => {
   return (
     <>
-      <Container className="d-flex justify-content-center">
+      <Container
+        className="d-flex justify-content-center"
+        md={12}
+        style={{
+          backgroundColor: "var(--bs-light-grey)",
+          paddingTop: "10rem",
+        }}
+      >
         <Row className="flex-column">
           <Col className="cd-card-title cd-title-font">Plans</Col>
           <Col md={12} className="d-flex justify-content-around text-center">
@@ -104,13 +109,16 @@ const Plans = () => {
                 </Card.Body>
                 <ListGroup className="list-group-flush">
                   <ListGroupItem className="cd-text-group-1">
-                    <Row style={{padding: '5.8rem 0'}}>
+                    <Row style={{ padding: "5.8rem 0" }}>
                       <Col>
-                      <strong>Tailored pricing</strong>
+                        <strong>Tailored pricing</strong>
                       </Col>
                     </Row>
                   </ListGroupItem>
-                  <ListGroupItem className="cd-text-group-3 text-start" style={{ padding: '2rem 2.5rem 1rem 2.5rem' }}>
+                  <ListGroupItem
+                    className="cd-text-group-3 text-start"
+                    style={{ padding: "2rem 2.5rem 1rem 2.5rem" }}
+                  >
                     <ul>
                       What's included?
                       <li>Everything in ‘Grow’</li>

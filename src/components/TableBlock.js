@@ -4,7 +4,11 @@ import { Accordion, Table } from "react-bootstrap";
 import DotActive from "../assets/dot-active.png";
 import DotInactive from "../assets/dot-inactive.png";
 
-// cell content component
+
+/** Cell content component
+ * We create cell component and do type checks to define string or value for image or non-image cells
+ */
+
 const CellContent = ({ value }) => {
   if (typeof value === "string") {
     return value;
@@ -15,7 +19,12 @@ const CellContent = ({ value }) => {
 };
 
 
-// whole table block component
+/** Whole table block component
+ * In this components we use iteration for table content. All we need is to make sure we have an unique id for each object in tableConten in ComparePlans.js
+ * First we iterate over rows in tables 
+ * Then we iterate over cells in created rows in tables           
+ */
+
 const TableBlock = ({ data }) => {
   const { blockTitle, table } = data;
 

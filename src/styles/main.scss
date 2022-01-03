@@ -37,6 +37,8 @@
   );
 }
 
+$main-border-shadow: 0px 5.98753px 5.98753px rgba(0, 0, 0, 0.25);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -70,11 +72,13 @@ body {
       border: 0;
     }
     .cd-dot-table {
-      height: 1.5rem !important;
+      height: 1.1rem !important;
     }
     table {
       &:last-child {
         border-bottom-style: hidden;
+        font-weight: bold;
+        line-height: 25px;
       }
     }
   }
@@ -84,7 +88,7 @@ body {
       width: 100%;
       max-width: 22rem;
       margin: 1.2rem;
-      box-shadow: 0px 5.98753px 5.98753px rgba(0, 0, 0, 0.25);
+      box-shadow: $main-border-shadow;
       border: 0;
       .card-body {
         max-height: 7rem;
@@ -93,7 +97,7 @@ body {
     }
     .card + .card {
       margin-left: 1.2rem;
-      box-shadow: 0px 5.98753px 5.98753px rgba(0, 0, 0, 0.25);
+      box-shadow: $main-border-shadow;
     }
     .list-group-item {
       border: 0;
@@ -192,16 +196,13 @@ body {
   padding: 1rem 0.8rem;
 }
 
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 .cd-blog-group {
   form {
     width: 100%;
     max-width: 20rem;
+  }
+  .row {
+    max-width: 57rem;
   }
   .btn-primary {
     background-color: var(--bs-dark-green);
@@ -213,13 +214,23 @@ footer a {
     padding: 0rem;
     width: 100%;
     margin: 1rem 0;
-    box-shadow: 0px 5.98753px 5.98753px rgba(0, 0, 0, 0.25);
+    box-shadow: $main-border-shadow;
     border: 0;
+    min-width: 15rem;
     .card-img-top {
       min-height: 10rem;
     }
   }
 }
+
+footer {
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
 
 @media (max-width: 575.98px) {
   .container {
@@ -241,7 +252,7 @@ footer a {
       .card {
         width: 100%;
         margin: 1rem 0;
-        box-shadow: 0px 5.98753px 5.98753px rgba(0, 0, 0, 0.25);
+        box-shadow: $main-border-shadow;
         border: 0;
       }
       .card + .card {
@@ -270,6 +281,11 @@ footer a {
 @media (max-width: 992px) {
   .card-group {
     flex-direction: column;
+  }
+  .cd-blog-group {
+    .row {
+      min-width: auto;
+    }
   }
 }
 

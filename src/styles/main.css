@@ -75,11 +75,13 @@ body {
 }
 
 .container .cd-table-top .cd-dot-table {
-  height: 1.5rem !important;
+  height: 1.1rem !important;
 }
 
 .container .cd-table-top table:last-child {
   border-bottom-style: hidden;
+  font-weight: bold;
+  line-height: 25px;
 }
 
 .container .card-group {
@@ -222,15 +224,13 @@ body {
   padding: 1rem 0.8rem;
 }
 
-footer a {
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 .cd-blog-group form {
   width: 100%;
   max-width: 20rem;
+}
+
+.cd-blog-group .row {
+  max-width: 57rem;
 }
 
 .cd-blog-group .btn-primary {
@@ -247,10 +247,17 @@ footer a {
   -webkit-box-shadow: 0px 5.98753px 5.98753px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5.98753px 5.98753px rgba(0, 0, 0, 0.25);
   border: 0;
+  min-width: 15rem;
 }
 
 .cd-blog-group .card .card-img-top {
   min-height: 10rem;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 575.98px) {
@@ -300,6 +307,9 @@ footer a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .cd-blog-group .row {
+    min-width: auto;
   }
 }
 

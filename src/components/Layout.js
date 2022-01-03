@@ -1,11 +1,6 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { Container, Row } from "react-bootstrap";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Plans from "./Plans";
 import Compareplans from "./ComparePlans";
@@ -24,29 +19,8 @@ const Layout = () => {
                 exact
                 element={
                   <>
-                    <Col
-                      md={12}
-                      style={{
-                        backgroundColor: "var(--bs-light-grey)",
-                        paddingTop: "10rem",
-                      }}
-                    >
-                      <Plans />
-                    </Col>
-                    <Col md={12}>
-                      <Compareplans />
-                    </Col>
-                    <Col
-                      md={12}
-                      className="text-center"
-                      style={{
-                        backgroundColor: "var(--bs-light-grey)",
-                        paddingTop: "10rem",
-                        paddingBottom: "10rem",
-                      }}
-                    >
-                      <Footer />
-                    </Col>
+                    <Plans />
+                    <Compareplans />
                   </>
                 }
               />
@@ -55,28 +29,12 @@ const Layout = () => {
                 exact
                 element={
                   <>
-                    <Col md={12}
-                      style={{
-                        backgroundColor: "var(--bs-light-grey)",
-                        paddingTop: "10rem", paddingBottom: "10rem"
-                      }}>
-                      <Blog />
-                    </Col>
-                    <Col
-                      md={12}
-                      className="text-center"
-                      style={{
-                        backgroundColor: "var(--bs-light-grey)",
-                        paddingTop: "5rem",
-                        paddingBottom: "10rem",
-                      }}
-                    >
-                      <Footer />
-                    </Col>
+                    <Blog />
                   </>
                 }
               />
             </Routes>
+            <Footer />
           </Row>
         </Container>
       </>

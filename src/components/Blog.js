@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
-import BlogCard from './BlogCard'
-
+import BlogCard from "./BlogCard";
 import SearchContent from "./SearchContent";
 
+/**
+ * blogContent is an array with the blog data.
+ * For full optimisation can be potentially done as separate file, or contents can be pulled from the outside with API call
+ */
 
 const blogContent = [
   {
@@ -33,38 +35,51 @@ const blogContent = [
   },
 ];
 
-
 const Blog = () => {
+  /**
+   * We use useState hook for dynamic change of content where blogContent array is a default state
+   */
 
-  const [cards, setCards] = useState(blogContent)
+  const [cards, setCards] = useState(blogContent);
 
-  console.log(blogContent)
+  /**
+   * This will show all available data in the console
+   */
+  console.log(blogContent);
 
   const onChange = (e) => {
     const value = e.target.value;
-    if(value === '') {
-      setCards(blogContent)
+    if (value === "") {
+      setCards(blogContent);
     } else {
-      setCards(blogContent.filter(card => card.text.toLowerCase().includes(value)))
+      setCards(
+        blogContent.filter((card) => card.text.toLowerCase().includes(value))
+      );
     }
-  }
+  };
 
+  /**
+   * We dynamically mapping through cards data fetched from blogContent array.
+   */
   return (
     <>
-      <Container>
+      <Container
+        style={{
+          backgroundColor: "var(--bs-light-grey)",
+          paddingTop: "10rem",
+          paddingBottom: "10rem",
+        }}
+      >
         <Row className="d-flex justify-content-around cd-blog-group">
           <Col md={8} className="cd-title-font text-center">
             BLOG
           </Col>
           <SearchContent onChange={onChange} />
-          <Col
-            md={8}
-            className="d-flex justify-content-center text-center pt-5"
-          >
+          <Col md={8} className="d-flex justify-content-around text-center pt-5">
             <Row>
-              {cards.map(card => (
-                <Col key={card.id} xs={12} lg={4}>
-                  <BlogCard data={card}/>
+              {cards.map((card) => (
+                <Col key={card.id} md={12} lg={4}>
+                  <BlogCard data={card} />
                 </Col>
               ))}
             </Row>
