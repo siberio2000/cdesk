@@ -45,7 +45,8 @@ const Blog = () => {
   /**
    * This will show all available data in the console
    */
-  console.log(blogContent);
+
+  // console.log(blogContent);
 
   const onChange = (e) => {
     const value = e.target.value;
@@ -66,8 +67,7 @@ const Blog = () => {
       <Container
         style={{
           backgroundColor: "var(--bs-light-grey)",
-          paddingTop: "10rem",
-          paddingBottom: "10rem",
+          padding: "10rem 2rem"
         }}
       >
         <Row className="d-flex justify-content-around cd-blog-group">

@@ -48,7 +48,7 @@ const Plans = () => {
                   </ListGroupItem>
                   <ListGroupItem className="cd-text-group-2">
                     From <strong>£60</strong> per month
-                    <br /> <strong>+ £6</strong> per employee on a share plan
+                    <br /> <strong>+ £6</strong> per employee<br /> on a share plan
                     <br /> <i>Paid monthly</i>
                   </ListGroupItem>
                   <ListGroupItem className="cd-text-group-3 text-start">
@@ -83,7 +83,7 @@ const Plans = () => {
                   </ListGroupItem>
                   <ListGroupItem className="cd-text-group-2">
                     From <strong>£120</strong> per month
-                    <br /> <strong>+ £6</strong> per employee on a share plan
+                    <br /> <strong>+ £6</strong> per employee<br /> on a share plan
                     <br /> <i>Paid monthly</i>
                   </ListGroupItem>
                   <ListGroupItem className="cd-text-group-3 text-start">

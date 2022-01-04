@@ -29,7 +29,7 @@ const tableContent = [
     id: 2,
     blockTitle: "Share plan management",
     table: [
-      ["Insert name", true, false, "This place is for text"],
+      ["Insert name", true, false, "Custom text"],
       ["Share certificates", false, true, true],
       ["Transaction history", true, false, true],
     ],
@@ -122,11 +122,11 @@ const Compareplans = () => {
             <tbody>
               <tr>
                 <td className="cd-table-name cd-title-font" colSpan="4">
-                  Compare Plans
+                  Compare plans
                 </td>
               </tr>
               <tr>
-                <td style={{fontWeight: 'normal'}}>
+                <td>
                   <sup>Please note Capsdesk’s pricing structure</sup>
                 </td>
                 <td>

@@ -70,6 +70,16 @@ body {
   padding: 0 5rem;
 }
 
+.container .cd-table-top sup {
+  font-weight: normal;
+  font-size: 1rem;
+  top: -1rem;
+}
+
+.container .cd-table-top img {
+  height: 11px;
+}
+
 .container .cd-table-top .table tr {
   border: 0;
 }
@@ -164,13 +174,14 @@ body {
 }
 
 .container .accordion-item .accordion-header {
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 1.8rem 0.5rem 3.8rem;
 }
 
 .container .accordion-item .accordion-header .accordion-button {
   background-color: var(--bs-dark-grey);
-  padding: 1rem 2.8rem;
+  padding: 1rem 3.1rem;
   font-weight: bold;
+  font-size: 1.30976875rem;
 }
 
 .container .accordion-item .accordion-button:focus {
@@ -193,7 +204,7 @@ body {
 }
 
 .container .table .cd-dot-table {
-  height: 0.8rem;
+  height: 1.029375rem;
 }
 
 .container .table .cd-table-name {
@@ -205,15 +216,15 @@ body {
 }
 
 .container .table tr td:nth-child(2) {
-  width: 20%;
+  width: 19%;
 }
 
 .container .table tr td:nth-child(3) {
-  width: 20%;
+  width: 19%;
 }
 
 .container .table tr td:nth-child(4) {
-  width: 20%;
+  width: 19%;
 }
 
 .container .table tr td:first-child {
@@ -221,7 +232,8 @@ body {
 }
 
 .table > :not(caption) > * > * {
-  padding: 1rem 0.8rem;
+  padding: 1rem 1.8rem;
+  font-size: 1.30976875rem;
 }
 
 .cd-blog-group form {
@@ -298,6 +310,12 @@ footer a {
   }
   .container .table td {
     font-size: 12px;
+  }
+  .container .table .cd-dot-table {
+    height: .6rem;
+  }
+  .table > :not(caption) > * > * {
+    padding: 1rem .5rem;
   }
 }
 
