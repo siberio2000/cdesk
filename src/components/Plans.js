@@ -33,7 +33,7 @@ const Plans = () => {
                   <Card.Title className="p-3">
                     <Row className="d-inline-flex flex-wrap align-items-center">
                       <Col>
-                        <img src={Dotxxl} className="mx-auto d-block" alt="" />
+                        <img src={Dotxxl} className="mx-auto d-block" alt="Dotxxl" />
                       </Col>
                       <Col>Start</Col>
                     </Row>
@@ -68,7 +68,7 @@ const Plans = () => {
                   <Card.Title className="p-3">
                     <Row className="d-inline-flex flex-wrap align-items-center">
                       <Col>
-                        <img src={Dot4} className="mx-auto d-block" alt="" />
+                        <img src={Dot4} className="mx-auto d-block" alt="Dot4" />
                       </Col>
                       <Col>Grow</Col>
                     </Row>
@@ -101,7 +101,7 @@ const Plans = () => {
                   <Card.Title className="p-3">
                     <Row className="d-inline-flex flex-wrap align-items-center">
                       <Col>
-                        <img src={Dot8} className="mx-auto d-block" alt="" />
+                        <img src={Dot8} className="mx-auto d-block" alt="Dot8" />
                       </Col>
                       <Col>Scale</Col>
                     </Row>

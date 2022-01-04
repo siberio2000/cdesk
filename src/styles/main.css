@@ -179,7 +179,7 @@ body {
 
 .container .accordion-item .accordion-header .accordion-button {
   background-color: var(--bs-dark-grey);
-  padding: 1rem 3.1rem;
+  padding: 1rem 4.5rem 1rem 3.1rem;
   font-weight: bold;
   font-size: 1.30976875rem;
 }

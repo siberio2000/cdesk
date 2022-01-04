@@ -131,19 +131,19 @@ const Compareplans = () => {
                 </td>
                 <td>
                   <div className="col w-100">
-                    <img src={Dotm} className="img-fluid" alt="" />
+                    <img src={Dotm} className="img-fluid" alt="Dotm" />
                   </div>
                   Start
                 </td>
                 <td>
                   <div className="col w-100">
-                    <img src={Dot4} className="img-fluid cd-dot-table" alt="" />
+                    <img src={Dot4} className="img-fluid cd-dot-table" alt="Dot4" />
                   </div>
                   Grow
                 </td>
                 <td>
                   <div className="col w-100">
-                    <img src={Dot8} className="img-fluid cd-dot-table" alt="" />
+                    <img src={Dot8} className="img-fluid cd-dot-table" alt="Dot8" />
                   </div>
                   Scale
                 </td>
